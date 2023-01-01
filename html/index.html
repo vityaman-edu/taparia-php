@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TapTaparia!</title>
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <script>var exports = {};</script>
+  <script type="module" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="module" src="../js/index.js"></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="nav">
+      <li class="inline"><a class="white" href="https://itmo.ru/">ITMO University</a></li>
+      <li class="inline"><a class="white" href="#">Story</a></li>
+      <li class="inline"><a class="white" href="https://github.com/vityaman">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Welcome to TapTaparia, Buddy!</h1>
+  </header>
+
+  <main class="main">
+    <div>
+      <p>
+        Imagine that you are an IT company intern. </br>
+        So, your first task is to tap on filled area. </br>
+        Let's go, just do it, go and click on this orange area!
+      </p>
+      <div class="container">
+        <div class="left side block">
+          <h4 class="centered-text">Control</h4>
+          <div class="input">
+            <form id="check-position-form" class="centered" accept-charset="utf-8" autocomplete="off" >
+              <fieldset>
+                <legend>Select (x, y) and R</legend>
+                <div id="check-position-x-values">
+                  <label for="x">X:</label>
+                </div>
+                <div>
+                  <label for="y">Y:</label>
+                  <input type="text" id="check-position-y" name="y" min="-3" max="5" placeholder="Y in (-3, 5)"
+                    class="number"><br>
+                </div>
+                <div>
+                  <label for="r">R:</label>
+                  <input type="text" id="check-position-r" name="r" min="2" max="5" placeholder="R in (2, 5)"
+                    class="number"><br>
+                </div>
+                <div>
+                  <input type="submit" value="Check" class="button" />
+                </div>
+              </fieldset>
+            </form>
+            <button id="switch-mode">Switch mode</button>
+          </div>
+        </div>
+        <div class="block">
+          <div class="hovering">
+            <canvas id="canvas" width="500" height="500"></canvas>
+          </div>
+        </div>
+        <div class="right side block">
+          <h4 class="centered-text">Result</h4>
+          <div class="small-text results">
+            <table id="result-table" class="centered results">
+              <tr>
+                <th>Time</th>
+                <th>Point</th>
+                <th>Result</th>
+                <th>Latency</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ul>
+      <li class="no-bullet">
+        Author: <a href="https://github.com/vityaman">vityaman@github.com</a>
+      </li>
+      <li class="no-bullet">
+        Sponsor: <a href="https://itmo.ru">ITMO University</a>
+      </li>
+      <li class="no-bullet" style="margin-top: 1%">
+        © 1993-2022 ITMO University
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>

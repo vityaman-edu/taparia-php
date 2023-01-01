@@ -1,0 +1,135 @@
+
+html {
+  font-family: "Cormorant Garamond", Courier, monospace;
+  margin: 0%;
+  background-color: black;
+}
+
+body {
+  margin: 5%;
+  margin-top: 0%;
+}
+
+.nav>* {
+  margin: 0.1%;
+}
+
+li.inline {
+  display: inline;
+}
+
+li.no-bullet {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+}
+
+.container>div {
+  flex: 1;
+}
+
+div.side {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+div.input {
+  padding: 2%;
+}
+
+
+
+.centered-text {
+  text-align: center;
+}
+
+.header {
+  padding: 2%;
+  text-align: center;
+  background-color: deeppink;
+  color: white;
+  font-size: 24 px;
+}
+
+.nav>*>a {
+  color: white;
+}
+
+.main {
+  background-color: white;
+  padding: 2%;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#canvas {
+  padding: auto;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: crosshair;
+  display: block;
+  border: 2px solid black;
+}
+
+input.number {
+  width: 40%;
+}
+
+input.button {
+  background-color: #77F;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+div.results {
+  padding: 0%;
+}
+
+table.results {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+.hovering:hover {
+  box-shadow: 5px 5px#77F;
+}
+
+.small-text {
+  font-size: small;
+}
+
+.footer {
+  color: white;
+}
+
+.footer>*>*>a {
+  color: white;
+}
